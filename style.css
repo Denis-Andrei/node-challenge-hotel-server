@@ -1,9 +1,44 @@
+.container{
+    width: 50%;
+    margin: 50px auto;
+    background-color: #f3f3f3;
+}
+h1{
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+}
 .form{
+    padding: 50px 100px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
+    
 }
 
 .input{
+    margin: 5px 0;
     padding: 10px;
+}
+
+.label {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.button{
+    width: 50%;
+    margin: 30px auto;
+    outline: none;
+    border: 2px solid rgb(47, 172, 47);
+    padding: 10px 15px;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+}
+
+.button:hover{
+    background-color:rgb(47, 172, 47);
+    color: white;
 }
