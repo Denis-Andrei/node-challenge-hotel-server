@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/style.css">
     <title>Create Bookings</title>
 </head>
 <body>
     <div class="container">
-        <h1>Book your room: </h1>
 
-
-        <form method="post" action="/bookings" class='form' >
-            <label class="label">Title:</label>
-            <input name="Title"  class="input" type="text">
-            <label class="label">FirstName:</label>
-            <input name="FirstName"  class="input" type="text">
-            <label class="label">Surname:</label>
-            <input name="Surname"  class="input" type="text">
-            <label class="label">Email:</label>
-            <input name="Email"  class="input" type="text">
-            <label class="label">CheckInDate: </label>
-            <input name="CheckInDate"  class="input" type="date">
-            <label class="label">CheckOutDate: </label>
-            <input name="CheckOutDate"  class="input" type="date">
-            <input class='button' type="submit" >
-        </form>
+        <div class="form-box">
+            <h1>Book your room: </h1>
+    
+    
+            <form method="post" action="/bookings" class='form' >
+                <label class="label">Title:</label>
+                <select name="title" class="input">
+                    <option>Select title</option>
+                    <option name="Mr">Mr.</option>
+                    <option name="Mrs">Mrs.</option>
+                    <option name="Ms">Ms.</option>
+                    <option name="Miss">Miss</option>
+                    <option name="Queen">Queen</option>
+                    <option name="King">King</option>
+                </select>
+                <label class="label">FirstName:</label>
+                <input name="FirstName"  class="input" type="text">
+                <label class="label">Surname:</label>
+                <input name="Surname"  class="input" type="text">
+                <label class="label">Email:</label>
+                <input name="Email"  class="input" type="text">
+                <label class="label">CheckInDate: </label>
+                <input name="CheckInDate"  class="input" type="date">
+                <label class="label">CheckOutDate: </label>
+                <input name="CheckOutDate"  class="input" type="date">
+                <input class='button' type="submit" >
+            </form>
+        </div>
     </div>
 </body>
 </html>
